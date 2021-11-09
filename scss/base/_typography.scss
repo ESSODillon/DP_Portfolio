@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Mustardo;
+  src: url(../../css/fonts/mustardo.ttf);
+}
+
+body {
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-white;
+}
+
+.heading-primary {
+  color: $color-white;
+  font-family: Mustardo;
+  font-size: 10rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-align: center;
+}

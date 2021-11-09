@@ -1,0 +1,15 @@
+{
+  "name": "dp_dev",
+  "version": "1.0.0",
+  "description": "Dillon Polleys Web Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/styles.scss css/styles.css -w",
+    "dev:server": "live-server"
+  },
+  "author": "Dillon Polley",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
