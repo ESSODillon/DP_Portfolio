@@ -35,20 +35,65 @@ body {
 body {
   font-weight: 400;
   font-family: "Lato", sans-serif;
-  /* font-size: 16px; */
   line-height: 1.7;
   color: #fff; }
 
 .heading-primary {
-  color: #fff;
-  font-family: Mustardo;
-  font-size: 10rem;
-  letter-spacing: 0.25rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 3rem; }
+  .heading-primary--main {
+    font-family: Mustardo;
+    font-size: 10rem;
+    letter-spacing: 0.25rem; }
+  .heading-primary--sub {
+    font-size: 3.5rem; }
 
-.heading-secondary {
-  font-size: 3.5rem;
-  text-align: center; }
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn--yellow {
+  background-color: #f1c40f;
+  color: #000; }
+  .btn--yellow::after {
+    background-color: #f1c40f; }
+
+.btn--blue {
+  background-color: #3498db;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #3498db; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s; }
 
 .header {
   height: 100vh;
@@ -65,3 +110,8 @@ body {
     bottom: 0;
     right: 0;
     width: 50%; }
+  .header__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem; }

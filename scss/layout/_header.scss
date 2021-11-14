@@ -14,9 +14,6 @@
     position: absolute;
     top: 20%;
     right: 50%;
-    // background-color: $color-tertiary;
-    // width: 40%;
-    // border-radius: 25px;
   }
 
   &__speaker {
@@ -24,5 +21,12 @@
     bottom: 0;
     right: 0;
     width: 50%;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
   }
 }
