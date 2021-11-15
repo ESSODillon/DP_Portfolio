@@ -32,7 +32,8 @@
 
   &--yellow {
     background-color: $color-primary;
-    color: $color-black;
+    color: $color-grey-dark-3;
+    font-weight: bold;
 
     &::after {
       background-color: $color-primary;
