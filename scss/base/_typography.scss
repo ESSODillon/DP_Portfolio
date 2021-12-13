@@ -37,9 +37,14 @@ body {
 
 .paragraph {
   width: 80vw;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  color: $color-grey-dark-3;
 
   &--about {
-    font-size: 2rem;
-    color: $color-grey-dark-3;
+  }
+
+  &--more {
   }
 }
