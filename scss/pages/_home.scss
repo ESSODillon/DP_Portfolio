@@ -2,8 +2,6 @@
   &--about {
     background-color: white;
     height: 50vh;
-    padding-left: 5rem;
-    padding-top: 2rem;
 
     @include respond(tablet-portrait) {
       padding: 20rem 0;
@@ -12,18 +10,34 @@
 
   &--skills {
     background-color: $color-grey-dark-2;
-    height: 87vh;
-    padding-left: 5rem;
-    padding-top: 2rem;
+    height: 100vh;
+
+    .skills__container {
+      color: white;
+      margin: 0 auto;
+      width: 90%;
+      height: 65%;
+      display: flex;
+
+      .box {
+        &__blue {
+          width: 25%;
+          height: 200px;
+          background-color: $color-white;
+          border: 3px solid $color-secondary;
+        }
+
+        &__yellow {
+          width: 25%;
+          height: 200px;
+          background-color: $color-white;
+          border: 3px solid $color-primary;
+        }
+      }
+    }
 
     @include respond(tablet-portrait) {
       padding: 20rem 0;
     }
   }
-}
-.box {
-  color: white;
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: $color-white;
 }

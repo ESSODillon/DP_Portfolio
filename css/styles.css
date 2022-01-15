@@ -55,7 +55,9 @@ body {
 
 .heading {
   width: max-content;
-  font-size: 3.5rem; }
+  font-size: 3.5rem;
+  padding-left: 5rem;
+  padding-top: 2rem; }
   .heading__dark {
     color: #333; }
   .heading__white {
@@ -64,6 +66,8 @@ body {
 .paragraph {
   width: 80vw;
   font-size: 2rem;
+  padding-left: 5rem;
+  padding-top: 2rem;
   color: #34495e; }
   .paragraph__about {
     padding-bottom: 3rem; }
@@ -194,18 +198,30 @@ body {
 
 .section--about {
   background-color: white;
-  height: 50vh;
-  padding-left: 5rem;
-  padding-top: 2rem; }
+  height: 50vh; }
   @media only screen and (max-width: 56.25em) {
     .section--about {
       padding: 20rem 0; } }
 
 .section--skills {
   background-color: #a5a5a5;
-  height: 87vh;
-  padding-left: 5rem;
-  padding-top: 2rem; }
+  height: 100vh; }
+  .section--skills .skills__container {
+    color: white;
+    margin: 0 auto;
+    width: 90%;
+    height: 65%;
+    display: flex; }
+    .section--skills .skills__container .box__blue {
+      width: 25%;
+      height: 200px;
+      background-color: #fff;
+      border: 3px solid #3498db; }
+    .section--skills .skills__container .box__yellow {
+      width: 25%;
+      height: 200px;
+      background-color: #fff;
+      border: 3px solid #f1c40f; }
   @media only screen and (max-width: 56.25em) {
     .section--skills {
       padding: 20rem 0; } }

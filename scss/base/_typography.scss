@@ -36,6 +36,8 @@ body {
 .heading {
   width: max-content;
   font-size: 3.5rem;
+  padding-left: 5rem;
+  padding-top: 2rem;
 
   &__dark {
     color: $color-grey-dark-3;
@@ -49,6 +51,8 @@ body {
 .paragraph {
   width: 80vw;
   font-size: 2rem;
+  padding-left: 5rem;
+  padding-top: 2rem;
   color: $color-tertiary;
 
   &__about {
@@ -56,6 +60,6 @@ body {
   }
 
   &__skills {
-    color: $color-white-bold;
+    color: $color-white;
   }
 }
