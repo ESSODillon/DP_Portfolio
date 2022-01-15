@@ -9,17 +9,15 @@ body {
 }
 
 .heading-primary {
-  text-align: center;
+  color: $color-white;
+  font-family: Mustardo;
+  font-size: 10rem;
+  letter-spacing: 0.25rem;
+}
 
-  &--main {
-    font-family: Mustardo;
-    font-size: 10rem;
-    letter-spacing: 0.25rem;
-  }
-
-  &--sub {
-    font-size: 3.5rem;
-  }
+.heading-sub {
+  color: $color-white;
+  font-size: 3.5rem;
 }
 
 .heading-top {
@@ -28,7 +26,6 @@ body {
   left: 3rem;
 
   &--about {
-    color: $color-grey-dark-3;
     font-size: 3.5rem;
   }
 }
@@ -39,13 +36,14 @@ body {
   padding-left: 5rem;
   padding-top: 2rem;
 
-  &__dark {
-    color: $color-grey-dark-3;
-  }
-
   &__white {
     color: $color-white;
   }
+}
+
+.heading2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .paragraph {

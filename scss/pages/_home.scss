@@ -10,28 +10,34 @@
 
   &--skills {
     background-color: $color-grey-dark-2;
-    height: 100vh;
+    height: 90vh;
 
     .skills__container {
-      color: white;
       margin: 0 auto;
       width: 90%;
       height: 65%;
       display: flex;
+      justify-content: space-evenly;
 
       .box {
         &__blue {
           width: 25%;
-          height: 200px;
+          height: max-content;
           background-color: $color-white;
-          border: 3px solid $color-secondary;
+          border: 5px solid $color-secondary;
         }
 
         &__yellow {
           width: 25%;
-          height: 200px;
+          height: max-content;
           background-color: $color-white;
-          border: 3px solid $color-primary;
+          border: 5px solid $color-primary;
+        }
+
+        &__text {
+          padding-left: 2rem;
+          padding-right: 2rem;
+          font-size: 1.5rem;
         }
       }
     }

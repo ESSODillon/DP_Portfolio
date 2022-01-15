@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  color: #34495e; }
 
 html {
   font-size: 62.5%; }
@@ -37,20 +38,20 @@ body {
   line-height: 1.7; }
 
 .heading-primary {
-  text-align: center; }
-  .heading-primary--main {
-    font-family: Mustardo;
-    font-size: 10rem;
-    letter-spacing: 0.25rem; }
-  .heading-primary--sub {
-    font-size: 3.5rem; }
+  color: #fff;
+  font-family: Mustardo;
+  font-size: 10rem;
+  letter-spacing: 0.25rem; }
+
+.heading-sub {
+  color: #fff;
+  font-size: 3.5rem; }
 
 .heading-top {
   position: absolute;
   top: 1rem;
   left: 3rem; }
   .heading-top--about {
-    color: #333;
     font-size: 3.5rem; }
 
 .heading {
@@ -58,10 +59,12 @@ body {
   font-size: 3.5rem;
   padding-left: 5rem;
   padding-top: 2rem; }
-  .heading__dark {
-    color: #333; }
   .heading__white {
     color: #fff; }
+
+.heading2 {
+  font-size: 2.5rem;
+  text-transform: uppercase; }
 
 .paragraph {
   width: 80vw;
@@ -76,6 +79,9 @@ body {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-bold-text {
+  font-weight: bold !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
@@ -205,23 +211,27 @@ body {
 
 .section--skills {
   background-color: #a5a5a5;
-  height: 100vh; }
+  height: 90vh; }
   .section--skills .skills__container {
-    color: white;
     margin: 0 auto;
     width: 90%;
     height: 65%;
-    display: flex; }
+    display: flex;
+    justify-content: space-evenly; }
     .section--skills .skills__container .box__blue {
       width: 25%;
-      height: 200px;
+      height: max-content;
       background-color: #fff;
-      border: 3px solid #3498db; }
+      border: 5px solid #3498db; }
     .section--skills .skills__container .box__yellow {
       width: 25%;
-      height: 200px;
+      height: max-content;
       background-color: #fff;
-      border: 3px solid #f1c40f; }
+      border: 5px solid #f1c40f; }
+    .section--skills .skills__container .box__text {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 1.5rem; }
   @media only screen and (max-width: 56.25em) {
     .section--skills {
       padding: 20rem 0; } }
