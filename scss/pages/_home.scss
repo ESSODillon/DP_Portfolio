@@ -1,19 +1,29 @@
-.section-about {
-  background-color: $color-primary;
-  padding: 10rem 0;
-  position: relative;
+.section {
+  &--about {
+    background-color: white;
+    height: 50vh;
+    padding-left: 5rem;
+    padding-top: 2rem;
 
-  @include respond(tablet-portrait) {
-    padding: 20rem 0;
+    @include respond(tablet-portrait) {
+      padding: 20rem 0;
+    }
+  }
+
+  &--skills {
+    background-color: $color-grey-dark-2;
+    height: 87vh;
+    padding-left: 5rem;
+    padding-top: 2rem;
+
+    @include respond(tablet-portrait) {
+      padding: 20rem 0;
+    }
   }
 }
-
-.section-contact {
-  background-color: $color-tertiary;
-  padding: 10rem 0;
-  position: relative;
-
-  @include respond(tablet-portrait) {
-    padding: 20rem 0;
-  }
+.box {
+  color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: $color-white;
 }

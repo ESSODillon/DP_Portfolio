@@ -12,6 +12,7 @@
 
   &__container {
     position: absolute;
+    color: $color-white;
     top: 20%;
     right: 50%;
   }
@@ -20,7 +21,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 50%;
+    width: 55%;
   }
 
   &__buttons {

@@ -33,10 +33,8 @@ body {
   src: url(../../css/fonts/mustardo.ttf); }
 
 body {
-  font-weight: 400;
   font-family: "Lato", sans-serif;
-  line-height: 1.7;
-  color: #fff; }
+  line-height: 1.7; }
 
 .heading-primary {
   text-align: center; }
@@ -55,12 +53,22 @@ body {
     color: #333;
     font-size: 3.5rem; }
 
+.heading {
+  width: max-content;
+  font-size: 3.5rem; }
+  .heading__dark {
+    color: #333; }
+  .heading__white {
+    color: #fff; }
+
 .paragraph {
   width: 80vw;
-  padding-left: 3rem;
-  padding-bottom: 3rem;
   font-size: 2rem;
-  color: #333; }
+  color: #34495e; }
+  .paragraph__about {
+    padding-bottom: 3rem; }
+  .paragraph__skills {
+    color: #fff; }
 
 .u-center-text {
   text-align: center !important; }
@@ -91,6 +99,28 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.u-underline__yellow {
+  height: 3px;
+  width: 100%;
+  background-color: #f1c40f;
+  display: block;
+  content: ""; }
+
+.u-underline__blue {
+  height: 3px;
+  width: 100%;
+  background-color: #3498db;
+  display: block;
+  content: ""; }
+
+.u-underline__top {
+  margin-top: -8px;
+  margin-bottom: 5px; }
+
+.u-underline__bottom {
+  margin-top: 7px;
+  margin-bottom: 5px; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -148,31 +178,34 @@ body {
   position: relative; }
   .header__container {
     position: absolute;
+    color: #fff;
     top: 20%;
     right: 50%; }
   .header__speaker {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 50%; }
+    width: 55%; }
   .header__buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 3rem; }
 
-.section-about {
-  background-color: #f1c40f;
-  padding: 10rem 0;
-  position: relative; }
+.section--about {
+  background-color: white;
+  height: 50vh;
+  padding-left: 5rem;
+  padding-top: 2rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-about {
+    .section--about {
       padding: 20rem 0; } }
 
-.section-contact {
-  background-color: #34495e;
-  padding: 10rem 0;
-  position: relative; }
+.section--skills {
+  background-color: #a5a5a5;
+  height: 87vh;
+  padding-left: 5rem;
+  padding-top: 2rem; }
   @media only screen and (max-width: 56.25em) {
-    .section-contact {
+    .section--skills {
       padding: 20rem 0; } }

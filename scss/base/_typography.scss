@@ -4,10 +4,8 @@
 }
 
 body {
-  font-weight: 400;
   font-family: "Lato", sans-serif;
   line-height: 1.7;
-  color: $color-white;
 }
 
 .heading-primary {
@@ -35,16 +33,29 @@ body {
   }
 }
 
-.paragraph {
-  width: 80vw;
-  padding-left: 3rem;
-  padding-bottom: 3rem;
-  font-size: 2rem;
-  color: $color-grey-dark-3;
+.heading {
+  width: max-content;
+  font-size: 3.5rem;
 
-  &--about {
+  &__dark {
+    color: $color-grey-dark-3;
   }
 
-  &--more {
+  &__white {
+    color: $color-white;
+  }
+}
+
+.paragraph {
+  width: 80vw;
+  font-size: 2rem;
+  color: $color-tertiary;
+
+  &__about {
+    padding-bottom: 3rem;
+  }
+
+  &__skills {
+    color: $color-white-bold;
   }
 }
