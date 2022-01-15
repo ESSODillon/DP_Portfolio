@@ -49,6 +49,15 @@
     }
   }
 
+  &--dark {
+    background-color: $color-tertiary;
+    color: $color-primary;
+
+    &::after {
+      background-color: $color-tertiary;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;

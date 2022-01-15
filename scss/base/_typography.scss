@@ -52,11 +52,15 @@ body {
 }
 
 .paragraph {
-  width: 80vw;
+  width: 100vw;
   font-size: 2rem;
-  padding-left: 5rem;
-  padding-top: 2rem;
   color: $color-tertiary;
+
+  &__padded {
+    width: 90vw;
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
 
   &__about {
     padding-bottom: 3rem;
@@ -65,4 +69,9 @@ body {
   &__skills {
     color: $color-white;
   }
+}
+
+.copyright__text {
+  font-size: 1.6rem;
+  color: $color-white;
 }

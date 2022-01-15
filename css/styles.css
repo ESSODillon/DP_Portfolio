@@ -71,15 +71,21 @@ body {
   text-transform: uppercase; }
 
 .paragraph {
-  width: 80vw;
+  width: 100vw;
   font-size: 2rem;
-  padding-left: 5rem;
-  padding-top: 2rem;
   color: #34495e; }
+  .paragraph__padded {
+    width: 90vw;
+    padding-left: 5rem;
+    padding-top: 2rem; }
   .paragraph__about {
     padding-bottom: 3rem; }
   .paragraph__skills {
     color: #fff; }
+
+.copyright__text {
+  font-size: 1.6rem;
+  color: #fff; }
 
 .u-center-text {
   text-align: center !important; }
@@ -172,6 +178,12 @@ body {
   .btn--blue::after {
     background-color: #3498db; }
 
+.btn--dark {
+  background-color: #34495e;
+  color: #f1c40f; }
+  .btn--dark::after {
+    background-color: #34495e; }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -183,6 +195,25 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
+
+.icon__light {
+  width: 5rem;
+  height: 5rem;
+  fill: #fff;
+  transition: all 0.2s; }
+  .icon__light:hover, .icon__light:active {
+    cursor: pointer;
+    fill: #f1c40f;
+    transform: translateY(-3px); }
+
+.icon__dark {
+  width: 5rem;
+  height: 5rem;
+  fill: #34495e; }
+  .icon__dark:hover, .icon__dark:active {
+    cursor: pointer;
+    fill: #3498db;
+    transform: translateY(-3px); }
 
 .header {
   height: 100vh;
@@ -205,6 +236,34 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 3rem; }
+  .header__icons {
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
+    width: 27rem;
+    display: flex;
+    justify-content: space-around; }
+    .header__icons img {
+      width: 5rem;
+      height: 5rem; }
+
+.footer {
+  width: 100%;
+  height: 38vh;
+  background-color: #f1c40f;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .icons__row {
+    display: flex;
+    justify-content: space-between;
+    width: 26rem; }
+    .footer .icons__row img {
+      width: 5rem;
+      height: 5rem; }
 
 .section--about {
   background-color: white;
@@ -289,3 +348,14 @@ body {
     @media only screen and (max-width: 56.25em) {
       .section--projects .projects__container {
         flex-direction: column; } }
+  @media only screen and (max-width: 56.25em) {
+    .section--projects {
+      height: max-content; } }
+
+.section--copyright {
+  height: 10vh;
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }

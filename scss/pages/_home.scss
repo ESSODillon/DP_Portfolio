@@ -117,5 +117,18 @@
         flex-direction: column;
       }
     }
+    @include respond(tablet-portrait) {
+      height: max-content;
+    }
+  }
+
+  &--copyright {
+    height: 10vh;
+    background-color: $color-secondary;
+    color: $color-white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
