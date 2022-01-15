@@ -208,14 +208,12 @@ body {
 
 .section--about {
   background-color: white;
-  height: 50vh; }
-  @media only screen and (max-width: 56.25em) {
-    .section--about {
-      padding: 20rem 0; } }
+  height: max-content; }
 
 .section--skills {
   background-color: #a5a5a5;
-  height: 90vh; }
+  padding-bottom: 5rem;
+  height: max-content; }
   .section--skills .skills__container {
     margin: 0 auto;
     width: 90%;
@@ -226,18 +224,24 @@ body {
       height: max-content;
       background-color: #fff;
       border: 5px solid #3498db; }
+      @media only screen and (max-width: 56.25em) {
+        .section--skills .skills__container .box__blue {
+          width: 100%; } }
     .section--skills .skills__container .box__yellow {
       width: 25%;
       height: max-content;
       background-color: #fff;
       border: 5px solid #f1c40f; }
+      @media only screen and (max-width: 56.25em) {
+        .section--skills .skills__container .box__yellow {
+          width: 100%; } }
     .section--skills .skills__container .box__text {
       padding-left: 2rem;
       padding-right: 2rem;
       font-size: 1.5rem; }
-  @media only screen and (max-width: 56.25em) {
-    .section--skills {
-      padding: 20rem 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .section--skills .skills__container {
+        flex-direction: column; } }
 
 .section--projects {
   height: 100vh;
@@ -250,22 +254,38 @@ body {
     .section--projects .projects__container .box {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
+      justify-content: space-around;
+      align-items: center; }
       .section--projects .projects__container .box__small {
-        width: 25%;
-        padding: 2.5rem; }
-      .section--projects .projects__container .box__large {
-        width: 40%;
-        padding: 5rem; }
-      .section--projects .projects__container .box__blue {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
         height: max-content;
+        width: 25%; }
+        @media only screen and (max-width: 56.25em) {
+          .section--projects .projects__container .box__small {
+            width: 100%; } }
+      .section--projects .projects__container .box__large {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        height: max-content;
+        width: 40%; }
+        @media only screen and (max-width: 56.25em) {
+          .section--projects .projects__container .box__large {
+            width: 100%; } }
+      .section--projects .projects__container .box__blue {
         background-color: #fff;
         border: 5px solid #3498db; }
       .section--projects .projects__container .box__yellow {
-        height: max-content;
         background-color: #fff;
         border: 5px solid #f1c40f; }
       .section--projects .projects__container .box__text {
         padding-left: 2rem;
         padding-right: 2rem;
         font-size: 1.5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .section--projects .projects__container {
+        flex-direction: column; } }

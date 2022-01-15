@@ -1,16 +1,16 @@
 .section {
   &--about {
     background-color: white;
-    height: 50vh;
+    height: max-content;
 
     @include respond(tablet-portrait) {
-      padding: 20rem 0;
     }
   }
 
   &--skills {
     background-color: $color-grey-dark-2;
-    height: 90vh;
+    padding-bottom: 5rem;
+    height: max-content;
 
     .skills__container {
       margin: 0 auto;
@@ -24,6 +24,10 @@
           height: max-content;
           background-color: $color-white;
           border: 5px solid $color-secondary;
+
+          @include respond(tablet-portrait) {
+            width: 100%;
+          }
         }
 
         &__yellow {
@@ -31,6 +35,10 @@
           height: max-content;
           background-color: $color-white;
           border: 5px solid $color-primary;
+
+          @include respond(tablet-portrait) {
+            width: 100%;
+          }
         }
 
         &__text {
@@ -39,10 +47,10 @@
           font-size: 1.5rem;
         }
       }
-    }
 
-    @include respond(tablet-portrait) {
-      padding: 20rem 0;
+      @include respond(tablet-portrait) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -59,26 +67,41 @@
       .box {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        align-items: center;
 
         &__small {
+          padding-left: 5rem;
+          padding-right: 5rem;
+          padding-bottom: 3rem;
+          padding-top: 3rem;
+          height: max-content;
           width: 25%;
-          padding: 2.5rem;
+
+          @include respond(tablet-portrait) {
+            width: 100%;
+          }
         }
 
         &__large {
+          padding-left: 10rem;
+          padding-right: 10rem;
+          padding-bottom: 3rem;
+          padding-top: 3rem;
+          height: max-content;
           width: 40%;
-          padding: 5rem;
+
+          @include respond(tablet-portrait) {
+            width: 100%;
+          }
         }
 
         &__blue {
-          height: max-content;
           background-color: $color-white;
           border: 5px solid $color-secondary;
         }
 
         &__yellow {
-          height: max-content;
           background-color: $color-white;
           border: 5px solid $color-primary;
         }
@@ -88,6 +111,10 @@
           padding-right: 2rem;
           font-size: 1.5rem;
         }
+      }
+
+      @include respond(tablet-portrait) {
+        flex-direction: column;
       }
     }
   }
