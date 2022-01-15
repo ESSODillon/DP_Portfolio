@@ -15,7 +15,6 @@
     .skills__container {
       margin: 0 auto;
       width: 90%;
-      height: 65%;
       display: flex;
       justify-content: space-evenly;
 
@@ -44,6 +43,52 @@
 
     @include respond(tablet-portrait) {
       padding: 20rem 0;
+    }
+  }
+
+  &--projects {
+    height: 100vh;
+    text-align: center;
+
+    .projects__container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      height: 80%;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__small {
+          width: 25%;
+          padding: 2.5rem;
+        }
+
+        &__large {
+          width: 40%;
+          padding: 5rem;
+        }
+
+        &__blue {
+          height: max-content;
+          background-color: $color-white;
+          border: 5px solid $color-secondary;
+        }
+
+        &__yellow {
+          height: max-content;
+          background-color: $color-white;
+          border: 5px solid $color-primary;
+        }
+
+        &__text {
+          padding-left: 2rem;
+          padding-right: 2rem;
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

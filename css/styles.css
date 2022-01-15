@@ -62,8 +62,12 @@ body {
   .heading__white {
     color: #fff; }
 
-.heading2 {
+.heading__medium {
   font-size: 2.5rem;
+  text-transform: uppercase; }
+
+.heading__small {
+  font-size: 1.6rem;
   text-transform: uppercase; }
 
 .paragraph {
@@ -215,7 +219,6 @@ body {
   .section--skills .skills__container {
     margin: 0 auto;
     width: 90%;
-    height: 65%;
     display: flex;
     justify-content: space-evenly; }
     .section--skills .skills__container .box__blue {
@@ -235,3 +238,34 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section--skills {
       padding: 20rem 0; } }
+
+.section--projects {
+  height: 100vh;
+  text-align: center; }
+  .section--projects .projects__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 80%; }
+    .section--projects .projects__container .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
+      .section--projects .projects__container .box__small {
+        width: 25%;
+        padding: 2.5rem; }
+      .section--projects .projects__container .box__large {
+        width: 40%;
+        padding: 5rem; }
+      .section--projects .projects__container .box__blue {
+        height: max-content;
+        background-color: #fff;
+        border: 5px solid #3498db; }
+      .section--projects .projects__container .box__yellow {
+        height: max-content;
+        background-color: #fff;
+        border: 5px solid #f1c40f; }
+      .section--projects .projects__container .box__text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.5rem; }
