@@ -1,4 +1,22 @@
 .contact {
   background-color: $color-tertiary;
   height: 100vh;
+
+  &__form {
+    display: flex;
+  }
+
+  &__label {
+    color: $color-white;
+  }
+
+  &__name {
+    width: 25%;
+  }
+
+  &__input {
+    background-color: $color-tertiary;
+    border: 5px solid $color-primary;
+    border-radius: 25px;
+  }
 }

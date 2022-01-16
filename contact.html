@@ -12,7 +12,44 @@
 <body>
 
 <section class="contact">
+    <h2 class="heading-contact heading-contact__primary u-center-text">
+        Let's Work Together!
+        <span class="u-underline__yellow u-underline__top"></span>
+        <span class="u-underline__blue u-underline__bottom"></span>
+    </h2>
+
+    <h3 class="heading-contact heading-contact__sub u-center-text">How may I be of assistance?</h3>
+
+    <form action="mailto:dillonpolley@gmail.com" 
+    contact="contact__form"
+    method="POST" 
+    enctype="multipart/form-data" 
+    name="EmailForm">
+        
+    <div class="contact__name">
+        <label class="contact__label" for="name">Name</label>
+        
+        <input class="contact__input" type="text" id="name">
+    </div>
     
+
+    <div class="contact__email">
+       <label class="contact__label" for="email">Email</label>
+
+        <input class="contact__input" type="email" id="email"> 
+    </div>
+    
+
+    <div class="contact__message">
+        <label class="contact__label" for="message">Message</label>
+
+        <input class="contact__input" type="text" id="message">
+    </div>
+    
+
+    <input class="btn btn--yellow btn--animated" type="submit" value="Submit">
+         
+    </form>
 </section>
 
 </body>
