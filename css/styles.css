@@ -359,3 +359,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.contact {
+  background-color: #34495e;
+  height: 100vh; }
