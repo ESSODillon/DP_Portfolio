@@ -375,14 +375,15 @@ body {
       flex-direction: column;
       justify-content: space-around;
       padding-top: 1.5rem;
-      padding-bottom: 1.5rem; }
+      padding-bottom: 1.5rem;
+      margin: 2rem; }
       .section--projects .projects__container .box__small {
         height: 25vh;
         width: 25%; }
         @media only screen and (max-width: 56.25em) {
           .section--projects .projects__container .box__small {
             width: 80%;
-            margin-bottom: 5rem; } }
+            margin-bottom: 3rem; } }
       .section--projects .projects__container .box__large {
         height: 30vh;
         width: 40%; }
