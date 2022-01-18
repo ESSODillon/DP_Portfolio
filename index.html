@@ -112,7 +112,7 @@
 
                     <p class="box__text u-bold-text u-margin-bottom-small">Libraries and  Frameworks:</p>
 
-                    <p class="box__text u-margin-bottom-small">React, Angular, Bootstrap, Nodejs</p>
+                    <p class="box__text u-margin-bottom-small">React, Angular, Bootstrap, Nodejs, jQuery.</p>
 
                     <p class="box__text u-bold-text u-margin-bottom-small">Tools:</p>
 
@@ -141,14 +141,14 @@
              </div>
         </section>
 
-        <section class="section--projects u-margin-bottom-medium">
+        <section class="section--projects section--projects__original u-margin-bottom-medium">
             <h2 class="heading u-margin-bottom-small">
                 My Work
                 <span class="u-underline__yellow u-underline__top"></span>
                 <span class="u-underline__blue u-underline__bottom"></span>
             </h2>
 
-            <div class="projects__container projects__container--main">
+            <div id="projects" class="projects__container projects__container--original">
                 <div class="box box__yellow box__small">
                     <h3 class="heading__small">Natours</h3>
 
@@ -181,16 +181,43 @@
                     <a href="https://polley-records.web.app/" class="btn btn--yellow btn--animated box__button u-margin-top-medium">Visit Site</a>
                 </div>
 
-                <div class="box box__blue box__large">
+                <div class="box box__yellow box__large">
                     <h3 class="heading__small">SV Marriage Cards</h3>
 
                     <p class="box__text">Fans of Stardew Valley, this ones for you! Checkout all the candidates in the game available for marriage, and learn more about them.</p>
 
-                    <a href="https://essodillon.github.io/SV_MarriageCards/" class="btn btn--yellow btn--animated box__button u-margin-top-medium">Visit Site</a>
+                    <a href="https://essodillon.github.io/SV_MarriageCards/" class="btn btn--blue btn--animated box__button u-margin-top-medium">Visit Site</a>
+                </div>
+
+                <div id="hidden" class="box box__blue box__small box__hidden">
+                    <h3 class="heading__small">Jungle Cook</h3>
+
+                    <p class="box__text">The home to various recipes of your choice. Add your own recipe today and fill the world with joy!</p>
+
+                    <a href="https://n315-mobileapp.firebaseapp.com/#" class="btn btn--blue btn--animated box__button u-margin-top-medium">Visit Site</a>
+                </div>
+
+                <div id="hidden" class="box box__yellow box__small box__hidden">
+                    <h3 class="heading__small">Travel-Fly</h3>
+
+                    <p class="box__text">The final project for my Intermediate Web Dev summer course of 2019.</p>
+
+                    <a href="https://essodillon.github.io/Travel-Fly/index.html" class="btn btn--blue btn--animated box__button u-margin-top-medium">Visit Site</a>
+                </div>
+
+                <div id="hidden" class="box box__blue box__small box__hidden">
+                    <h3 class="heading__small">Connect 4</h3>
+
+                    <p class="box__text">Midterm project for N320 media application development. Classic board game.
+                    </p>
+
+                    <a href="https://essodillon.github.io/Connect4/index.html" class="btn btn--yellow btn--animated box__button u-margin-top-medium">Visit Site</a>
                 </div>
             </div>
 
-            <a href="#" class="btn btn--yellow btn--animated projects__button">View All</a>
+            <a id="view--all" class="btn btn--yellow btn--animated projects__button">View All</a>
+
+            <a id="view--less" class="u-display-none">View Less</a>
         </section>
     </main>
 
@@ -231,5 +258,8 @@
     <section class="section--copyright u-center-text">
         <p class="copyright__text">Copyright © 2022 Dillon Polley All Rights Reserved</p>
     </section>
+
+    <script src="lib/jquery-3.5.1.min.js"></script>
+    <script src="app/app.js"></script>
 </body>
 </html>

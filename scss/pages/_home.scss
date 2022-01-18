@@ -58,9 +58,18 @@
   }
 
   &--projects {
-    height: 100vh;
     text-align: center;
     position: relative;
+
+    // Toggled off when "View All" is clicked
+    &__original {
+      height: 100vh;
+    }
+
+    // Toggled on when "View All" is clicked
+    &__more {
+      height: 100%;
+    }
 
     @include respond(tablet-portrait) {
       height: max-content;
@@ -73,11 +82,13 @@
         flex-wrap: wrap;
         align-content: space-around;
 
-        &--main {
+        // Toggled off when "View All" is clicked
+        &--original {
           height: 80%;
         }
 
-        &--all {
+        // Toggled on when "View All" is clicked
+        &--more {
           height: 100%;
         }
 
@@ -127,6 +138,10 @@
             padding-left: 2rem;
             padding-right: 2rem;
             font-size: 1.5rem;
+          }
+
+          &__hidden {
+            display: none;
           }
 
           &__button {
