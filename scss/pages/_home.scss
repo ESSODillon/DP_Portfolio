@@ -25,25 +25,25 @@
 
       .box {
         &__blue {
-          width: 25%;
+          width: 30%;
           height: max-content;
           background-color: $color-white;
           border: 5px solid $color-secondary;
 
           @include respond(tablet-portrait) {
-            width: 65%;
+            width: 80%;
             margin-bottom: 5rem;
           }
         }
 
         &__yellow {
-          width: 25%;
+          width: 30%;
           height: max-content;
           background-color: $color-white;
           border: 5px solid $color-primary;
 
           @include respond(tablet-portrait) {
-            width: 65%;
+            width: 80%;
             margin-bottom: 5rem;
           }
         }
@@ -60,79 +60,99 @@
   &--projects {
     height: 100vh;
     text-align: center;
+    position: relative;
 
-    .projects__container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      height: 80%;
-
-      @include respond(tablet-portrait) {
-        align-content: center;
-      }
-
-      .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-        &__small {
-          padding-left: 5rem;
-          padding-right: 5rem;
-          padding-bottom: 3rem;
-          padding-top: 3rem;
-          height: max-content;
-          width: 25%;
-
-          @include respond(tablet-portrait) {
-            width: 80%;
-            margin-bottom: 5rem;
-          }
-        }
-
-        &__large {
-          padding-left: 10rem;
-          padding-right: 10rem;
-          padding-bottom: 3rem;
-          padding-top: 3rem;
-          height: max-content;
-          width: 40%;
-
-          @include respond(tablet-portrait) {
-            width: 80%;
-            margin-bottom: 5rem;
-          }
-
-          @include respond(phone) {
-            padding-left: 0;
-            padding-right: 0;
-          }
-        }
-
-        &__blue {
-          background-color: $color-white;
-          border: 5px solid $color-secondary;
-        }
-
-        &__yellow {
-          background-color: $color-white;
-          border: 5px solid $color-primary;
-        }
-
-        &__text {
-          padding-left: 2rem;
-          padding-right: 2rem;
-          font-size: 1.5rem;
-        }
-      }
-
-      @include respond(tablet-portrait) {
-        flex-direction: column;
-      }
-    }
     @include respond(tablet-portrait) {
       height: max-content;
+    }
+
+    .projects {
+      &__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: space-around;
+
+        &--main {
+          height: 80%;
+        }
+
+        &--all {
+          height: 100%;
+        }
+
+        .box {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+
+          &__small {
+            height: 25vh;
+            width: 25%;
+
+            @include respond(tablet-portrait) {
+              width: 80%;
+              margin-bottom: 5rem;
+            }
+          }
+
+          &__large {
+            height: 30vh;
+            width: 40%;
+
+            @include respond(tablet-portrait) {
+              width: 80%;
+              margin-bottom: 5rem;
+            }
+
+            @include respond(phone) {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+
+          &__blue {
+            background-color: $color-white;
+            border: 5px solid $color-secondary;
+          }
+
+          &__yellow {
+            background-color: $color-white;
+            border: 5px solid $color-primary;
+          }
+
+          &__text {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            font-size: 1.5rem;
+          }
+
+          &__button {
+            margin: 0 auto;
+          }
+        }
+      }
+
+      &__button {
+        position: absolute;
+        top: 2rem;
+        right: 5rem;
+
+        @include respond(phone) {
+          position: relative;
+          width: 50%;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+
+    .exit {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
     }
   }
 

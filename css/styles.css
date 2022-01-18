@@ -42,6 +42,9 @@ body {
   font-family: Mustardo;
   font-size: 10rem;
   letter-spacing: 0.25rem; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary {
+      text-align: center; } }
 
 .heading-sub {
   color: #fff;
@@ -72,6 +75,10 @@ body {
   padding-top: 2rem; }
   .heading__white {
     color: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .heading {
+      padding-left: 0;
+      margin: 0 auto; } }
 
 .heading__medium {
   font-size: 2.5rem;
@@ -89,6 +96,10 @@ body {
     width: 90vw;
     padding-left: 5rem;
     padding-top: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .paragraph__padded {
+        padding-left: 0;
+        margin: 0 auto; } }
   .paragraph__about {
     padding-bottom: 3rem; }
   .paragraph__skills {
@@ -226,6 +237,15 @@ body {
     fill: #3498db;
     transform: translateY(-3px); }
 
+.icon__yellow {
+  width: 5rem;
+  height: 5rem;
+  fill: #f1c40f; }
+  .icon__yellow:hover, .icon__yellow:active {
+    cursor: pointer;
+    fill: #fff;
+    transform: translateY(-3px); }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to left bottom, rgba(52, 73, 94, 0.9), rgba(52, 73, 94, 0.9)), url(../img/Indianapolis.jpeg);
@@ -237,11 +257,18 @@ body {
     color: #fff;
     top: 20%;
     right: 50%; }
+    @media only screen and (max-width: 75em) {
+      .header__container {
+        right: 0;
+        width: 100%; } }
   .header__speaker {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 55%; }
+    @media only screen and (max-width: 75em) {
+      .header__speaker {
+        display: none; } }
   .header__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -257,6 +284,11 @@ body {
     .header__icons img {
       width: 5rem;
       height: 5rem; }
+    @media only screen and (max-width: 75em) {
+      .header__icons {
+        width: 100%;
+        left: 0;
+        justify-content: space-evenly; } }
 
 .footer {
   width: 100%;
@@ -294,22 +326,22 @@ body {
         flex-direction: column;
         align-items: center; } }
     .section--skills .skills__container .box__blue {
-      width: 25%;
+      width: 30%;
       height: max-content;
       background-color: #fff;
       border: 5px solid #3498db; }
       @media only screen and (max-width: 56.25em) {
         .section--skills .skills__container .box__blue {
-          width: 65%;
+          width: 80%;
           margin-bottom: 5rem; } }
     .section--skills .skills__container .box__yellow {
-      width: 25%;
+      width: 30%;
       height: max-content;
       background-color: #fff;
       border: 5px solid #f1c40f; }
       @media only screen and (max-width: 56.25em) {
         .section--skills .skills__container .box__yellow {
-          width: 65%;
+          width: 80%;
           margin-bottom: 5rem; } }
     .section--skills .skills__container .box__text {
       padding-left: 2rem;
@@ -318,37 +350,35 @@ body {
 
 .section--projects {
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  @media only screen and (max-width: 56.25em) {
+    .section--projects {
+      height: max-content; } }
   .section--projects .projects__container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 80%; }
-    @media only screen and (max-width: 56.25em) {
-      .section--projects .projects__container {
-        align-content: center; } }
+    align-content: space-around; }
+    .section--projects .projects__container--main {
+      height: 80%; }
+    .section--projects .projects__container--all {
+      height: 100%; }
     .section--projects .projects__container .box {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      align-items: center; }
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem; }
       .section--projects .projects__container .box__small {
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-bottom: 3rem;
-        padding-top: 3rem;
-        height: max-content;
+        height: 25vh;
         width: 25%; }
         @media only screen and (max-width: 56.25em) {
           .section--projects .projects__container .box__small {
             width: 80%;
             margin-bottom: 5rem; } }
       .section--projects .projects__container .box__large {
-        padding-left: 10rem;
-        padding-right: 10rem;
-        padding-bottom: 3rem;
-        padding-top: 3rem;
-        height: max-content;
+        height: 30vh;
         width: 40%; }
         @media only screen and (max-width: 56.25em) {
           .section--projects .projects__container .box__large {
@@ -368,12 +398,22 @@ body {
         padding-left: 2rem;
         padding-right: 2rem;
         font-size: 1.5rem; }
-    @media only screen and (max-width: 56.25em) {
-      .section--projects .projects__container {
-        flex-direction: column; } }
-  @media only screen and (max-width: 56.25em) {
-    .section--projects {
-      height: max-content; } }
+      .section--projects .projects__container .box__button {
+        margin: 0 auto; }
+  .section--projects .projects__button {
+    position: absolute;
+    top: 2rem;
+    right: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .section--projects .projects__button {
+        position: relative;
+        width: 50%;
+        top: 0;
+        right: 0; } }
+  .section--projects .exit {
+    position: absolute;
+    right: 2rem;
+    top: 2rem; }
 
 .section--copyright {
   height: 10vh;
@@ -386,7 +426,8 @@ body {
 .contact {
   background-color: #34495e;
   height: 100vh;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  position: relative; }
   .contact__form {
     padding-top: 3.2rem;
     width: 70vw;
@@ -432,6 +473,10 @@ body {
     .contact__input__second {
       height: 20rem;
       padding-bottom: 14rem; }
+  .contact .exit {
+    position: absolute;
+    right: 3rem;
+    top: 3rem; }
   .contact__button {
     margin: 0 auto;
     width: 16.3rem;

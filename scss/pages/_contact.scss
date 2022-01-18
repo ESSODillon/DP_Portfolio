@@ -2,6 +2,7 @@
   background-color: $color-tertiary;
   height: 100vh;
   transition: all 0.2s;
+  position: relative;
 
   &__form {
     padding-top: 3.2rem;
@@ -70,6 +71,12 @@
       height: 20rem;
       padding-bottom: 14rem;
     }
+  }
+
+  .exit {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
   }
 
   &__button {

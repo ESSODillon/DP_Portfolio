@@ -13,6 +13,10 @@ body {
   font-family: Mustardo;
   font-size: 10rem;
   letter-spacing: 0.25rem;
+
+  @include respond(tablet-landscape) {
+    text-align: center;
+  }
 }
 
 .heading-sub {
@@ -55,6 +59,11 @@ body {
   &__white {
     color: $color-white;
   }
+
+  @include respond(tablet-portrait) {
+    padding-left: 0;
+    margin: 0 auto;
+  }
 }
 
 .heading__medium {
@@ -76,6 +85,11 @@ body {
     width: 90vw;
     padding-left: 5rem;
     padding-top: 2rem;
+
+    @include respond(tablet-portrait) {
+      padding-left: 0;
+      margin: 0 auto;
+    }
   }
 
   &__about {
