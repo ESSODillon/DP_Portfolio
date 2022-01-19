@@ -2,9 +2,6 @@
   &--about {
     background-color: white;
     height: max-content;
-
-    @include respond(tablet-portrait) {
-    }
   }
 
   &--skills {
