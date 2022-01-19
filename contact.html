@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN File 1 for Sweet Alerts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.15.5/sweetalert2.min.js" integrity="sha512-+uGHdpCaEymD6EqvUR4H/PBuwqm3JTZmRh3gT0Lq52VGDAlywdXPBEiLiZUg6D1ViLonuNSUFdbL2tH9djAP8g==" crossorigin="anonymous"></script>
+    <!-- CDN File 2 for Sweet Alerts -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
     <title>Dillon ~ Contact Me</title>
     <link rel="stylesheet" href="css/styles.css">
 
@@ -24,33 +29,35 @@
 
     <h3 class="heading-contact heading-contact__sub u-center-text">How may I be of assistance?</h3>
 
-    <form action="https://formsubmit.co/dillonpolley@gmail.com"
+    <form
     method="POST" 
     enctype="multipart/form-data" 
     name="EmailForm"
     class="contact__form"
     id="contactForm">
 
+    <!-- action="https://formsubmit.co/dillonpolley@gmail.com" -->
+
     <input type="hidden" name="_next" value="https://essodillon.github.io/DP_Portfolio/thanks.html">
         
     <div class="contact__name">
         <label class="contact__label" for="name">Name:</label>
         
-        <input  class="contact__input contact__input__first" type="text" name="name" required>
+        <input  class="contact__input contact__input__first" type="text" id="name" name="name" required>
     </div>
     
 
     <div class="contact__email">
        <label class="contact__label" for="email">Email:</label>
 
-        <input class="contact__input contact__input__first" type="email" name="email" required> 
+        <input class="contact__input contact__input__first" type="email" id="email" name="email" required> 
     </div>
     
 
     <div class="contact__message">
         <label class="contact__label" for="message">Message:</label>
 
-        <textarea class="contact__input contact__input__second" type="text" name="message" required></textarea>
+        <textarea class="contact__input contact__input__second" type="text" id="message" name="message" required></textarea>
     </div>
     
     <a class="btn btn--yellow btn--animated contact__button u-center-text" onClick="submitForm()">Submit</a>
@@ -60,7 +67,30 @@
 
 <script>
     function submitForm() {
-        document.getElementById("contactForm").submit();
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        const submitAlert = Swal.mixin({
+            toast: true,
+            position: "top-start",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener("mouseenter", Swal.stopTimer);
+                toast.addEventListener("mouseleave", Swal.resumeTimer);
+            },
+        });
+
+        if(name == "" || email == "" || message == "") {
+            submitAlert.fire({
+                title: "You've left a field empty!",
+                icon: "error",
+            });
+        } else {
+            document.getElementById("contactForm").submit();
+        }
     }
 </script>
 
