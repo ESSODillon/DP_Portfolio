@@ -24,31 +24,33 @@
 
     <h3 class="heading-contact heading-contact__sub u-center-text">How may I be of assistance?</h3>
 
-    <form action="mailto:dillonpolley@gmail.com" 
+    <form action="https://formsubmit.co/dillonpolley@gmail.com" 
     contact="contact__form"
     method="POST" 
     enctype="multipart/form-data" 
     name="EmailForm"
     class="contact__form">
+
+    <input type="hidden" name="_next" value="https://essodillon.github.io/DP_Portfolio/thanks.html">
         
     <div class="contact__name">
         <label class="contact__label" for="name">Name:</label>
         
-        <input class="contact__input contact__input__first" type="text" id="name" required>
+        <input  class="contact__input contact__input__first" type="text" name="name" required>
     </div>
     
 
     <div class="contact__email">
        <label class="contact__label" for="email">Email:</label>
 
-        <input class="contact__input contact__input__first" type="email" id="email" required> 
+        <input class="contact__input contact__input__first" type="email" name="email" required> 
     </div>
     
 
     <div class="contact__message">
         <label class="contact__label" for="message">Message:</label>
 
-        <textarea class="contact__input contact__input__second" type="text" id="message" required></textarea>
+        <textarea class="contact__input contact__input__second" type="text" name="message" required></textarea>
     </div>
     
 

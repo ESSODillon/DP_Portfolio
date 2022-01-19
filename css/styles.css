@@ -355,9 +355,9 @@ body {
   text-align: center;
   position: relative; }
   .section--projects__original {
-    height: 100vh; }
+    height: 80vh; }
   .section--projects__more {
-    height: 100%; }
+    height: max-content; }
   @media only screen and (max-width: 56.25em) {
     .section--projects {
       height: max-content; } }

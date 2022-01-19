@@ -63,12 +63,12 @@
 
     // Toggled off when "View All" is clicked
     &__original {
-      height: 100vh;
+      height: 80vh;
     }
 
     // Toggled on when "View All" is clicked
     &__more {
-      height: 100%;
+      height: max-content;
     }
 
     @include respond(tablet-portrait) {
