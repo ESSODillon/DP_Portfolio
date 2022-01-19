@@ -40,6 +40,23 @@ body {
   }
 }
 
+.heading-thanks {
+  color: $color-white;
+  width: max-content;
+  margin: 0 auto;
+
+  &__primary {
+    padding-top: 4rem;
+    font-size: 3.5rem;
+  }
+
+  &__sub {
+    padding-top: 2rem;
+    font-size: 2.8rem;
+    width: 80%;
+  }
+}
+
 .heading-top {
   position: absolute;
   top: 1rem;

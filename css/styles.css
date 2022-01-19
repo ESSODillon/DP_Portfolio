@@ -61,6 +61,18 @@ body {
     padding-top: 2rem;
     font-size: 2.8rem; }
 
+.heading-thanks {
+  color: #fff;
+  width: max-content;
+  margin: 0 auto; }
+  .heading-thanks__primary {
+    padding-top: 4rem;
+    font-size: 3.5rem; }
+  .heading-thanks__sub {
+    padding-top: 2rem;
+    font-size: 2.8rem;
+    width: 80%; }
+
 .heading-top {
   position: absolute;
   top: 1rem;
@@ -497,3 +509,16 @@ body {
     @media only screen and (max-width: 475px) {
       .contact__button {
         margin-bottom: 1.5rem; } }
+
+.thanks {
+  background-color: #34495e;
+  height: 100vh;
+  transition: all 0.2s;
+  position: relative; }
+  @media only screen and (max-width: 475px) {
+    .thanks {
+      padding-top: 6.5rem; } }
+  .thanks .exit {
+    position: absolute;
+    right: 3rem;
+    top: 3rem; }
