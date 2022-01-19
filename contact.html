@@ -24,12 +24,12 @@
 
     <h3 class="heading-contact heading-contact__sub u-center-text">How may I be of assistance?</h3>
 
-    <form action="https://formsubmit.co/dillonpolley@gmail.com" 
-    contact="contact__form"
+    <form action="https://formsubmit.co/dillonpolley@gmail.com"
     method="POST" 
     enctype="multipart/form-data" 
     name="EmailForm"
-    class="contact__form">
+    class="contact__form"
+    id="contactForm">
 
     <input type="hidden" name="_next" value="https://essodillon.github.io/DP_Portfolio/thanks.html">
         
@@ -53,11 +53,16 @@
         <textarea class="contact__input contact__input__second" type="text" name="message" required></textarea>
     </div>
     
-
-    <input class="btn btn--yellow btn--animated contact__button" type="submit" value="Submit">
+    <a class="btn btn--yellow btn--animated contact__button u-center-text" onClick="submitForm()">Submit</a>
          
     </form>
 </section>
+
+<script>
+    function submitForm() {
+        document.getElementById("contactForm").submit();
+    }
+</script>
 
 </body>
 </html>
