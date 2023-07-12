@@ -1,0 +1,41 @@
+.icon {
+  &__light {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-white;
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      fill: $color-primary;
+      transform: translateY(-3px);
+    }
+  }
+
+  &__dark {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-tertiary;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      fill: $color-secondary;
+      transform: translateY(-3px);
+    }
+  }
+
+  &__yellow {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-primary;
+
+    &:hover,
+    &:active {
+      cursor: pointer;
+      fill: $color-white;
+      transform: translateY(-3px);
+    }
+  }
+}

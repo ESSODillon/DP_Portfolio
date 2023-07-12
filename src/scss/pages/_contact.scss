@@ -1,0 +1,96 @@
+.contact {
+  background-color: $color-tertiary;
+  height: 100vh;
+  transition: all 0.2s;
+  position: relative;
+
+  @media only screen and (max-width: 475px) {
+    height: 100%;
+    padding-top: 6.5rem;
+  }
+
+  &__form {
+    padding-top: 3.2rem;
+    width: 70vw;
+    height: 75vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    @include respond(tablet-portrait) {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    color: $color-white;
+    font-size: 2.4rem;
+  }
+
+  &__name {
+    width: 35%;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+    }
+  }
+
+  &__email {
+    width: 35%;
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+    }
+  }
+
+  &__message {
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 2rem;
+
+    background-color: $color-tertiary;
+    border: 5px solid $color-primary;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.2s;
+
+    color: $color-primary;
+    font-size: 2.4rem;
+    font-family: "Lato", sans-serif;
+
+    &:focus {
+      background-color: $color-white;
+      color: $color-tertiary;
+    }
+
+    &__first {
+      height: 5rem;
+    }
+
+    &__second {
+      height: 20rem;
+      padding-bottom: 14rem;
+    }
+  }
+
+  .exit {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 16.3rem;
+    height: 5.4rem;
+
+    @media only screen and (max-width: 475px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
