@@ -1,0 +1,96 @@
+[
+  {
+    "Projects": [
+      {
+        "id": 0,
+        "title": "Dinner Dart",
+        "description": "Write description here",
+        "link": "https://dinnerdart-8ad0b.web.app/login",
+        "size": "small",
+        "primary_color": "yellow",
+        "secondary_color": "blue"
+      },
+      {
+        "id": 1,
+        "title": "CLHA Web App",
+        "description": "Write description here",
+        "link": "http:,//www.cedarlakehistory.org/#/map",
+        "size": "small",
+        "primary_color": "blue",
+        "secondary_color": "yellow"
+      },
+      {
+        "id": 2,
+        "title": "Natours",
+        "description": "Travel across the globe, touring the most beautiful places that nature has to offer.",
+        "link": "https,://essodillon.github.io/Natours/",
+        "size": "small",
+        "primary_color": "yellow",
+        "secondary_color": "blue"
+      },
+      {
+        "id": 3,
+        "title": "Total Titans",
+        "description": "A workout application for gym rats of all shapes, sizes, and levels of experience! View previously made workouts, or create your own.",
+        "link": "https,://essodillon.github.io/Total_Titans/",
+        "size": "large",
+        "primary_color": "blue",
+        "secondary_color": "yellow"
+      },
+      {
+        "id": 4,
+        "title": "Trillo",
+        "description": "Want to get away with some friends or family on a holiday?",
+        "link": "https://essodillon.github.io/Trillo/",
+        "size": "large",
+        "primary_color": "yellow",
+        "secondary_color": "blue"
+      },
+      {
+        "id": 5,
+        "title": "Fight Life",
+        "description": "React single page application with Firebase authentication and firestore data/file storage. Checkout upcoming boxing fights, and connect with world champions.",
+        "link": "https://fightlife-3373d.web.app/",
+        "size": "small",
+        "primary_color": "blue",
+        "secondary_color": "yellow"
+      },
+      {
+        "id": 6,
+        "title": "SV Marriage Cards",
+        "description": "Fans of Stardew Valley, this ones for you! Checkout all the candidates in the game available for marriage, and learn more about them.",
+        "link": "https://essodillon.github.io/SV_MarriageCards/",
+        "size": "small",
+        "primary_color": "yellow",
+        "secondary_color": "blue"
+      },
+      {
+        "id": 7,
+        "title": "Developer Match",
+        "description": "A fun little matching game with CSS animations, built with React JavaScript. Themed with some of my favorite programming languages!",
+        "link": "https://essodillon.github.io/Developer-Match/",
+        "size": "small",
+        "primary_color": "blue",
+        "secondary_color": "yellow"
+      },
+      {
+        "id": 8,
+        "title": "Travel-Fly",
+        "description": "The final project for my Intermediate Web Dev summer course of 2019. For those with a strong desire or impulse to wander, or travel the world.",
+        "link": "https://essodillon.github.io/Travel-Fly/index.html",
+        "size": "large",
+        "primary_color": "yellow",
+        "secondary_color": "blue"
+      },
+      {
+        "id": 9,
+        "title": "My Money",
+        "description": "Finance tracking application with user authentication and Firebase backend. Start tracking your purchases today! Definitely the most secure banking application ever.",
+        "link": "https://mymoney-d5e4b.web.app",
+        "size": "large",
+        "primary_color": "blue",
+        "secondary_color": "yellow"
+      }
+    ]
+  }
+]
