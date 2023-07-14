@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import ProjectCard from '../../components/ProjectCard';
+import Grid from '@mui/material/Grid';
 
 function ProjectsSection() {
   const [projects, setProjects] = useState([]);
@@ -29,7 +30,7 @@ function ProjectsSection() {
         <span className='u-underline__blue u-underline__bottom'></span>
       </h2>
 
-      <div id='projects' className='projects__container projects__container--original'>
+      <Grid id='projects' className='projects__container projects__container--original' container>
         {!viewAll
           ? projects
               .slice(0, 5)
@@ -55,7 +56,7 @@ function ProjectsSection() {
                 secondary_color={project.secondary_color}
               />
             ))}
-      </div>
+      </Grid>
 
       <a
         id={`view--${viewAll ? 'less' : 'all'}`}

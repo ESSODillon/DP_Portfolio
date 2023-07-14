@@ -3,39 +3,39 @@
     "Projects": [
       {
         "id": 0,
-        "title": "Dinner Dart",
-        "description": "Write description here",
-        "link": "https://dinnerdart-8ad0b.web.app/login",
+        "title": "Total Titans",
+        "description": "A workout application for gym rats of all shapes, sizes, and levels of experience! View previously made workouts, or create your own.",
+        "link": "https://essodillon.github.io/Total_Titans/",
         "size": "small",
-        "primary_color": "yellow",
-        "secondary_color": "blue"
+        "primary_color": "blue",
+        "secondary_color": "yellow"
       },
       {
         "id": 1,
         "title": "CLHA Web App",
         "description": "Write description here",
-        "link": "http:,//www.cedarlakehistory.org/#/map",
-        "size": "small",
-        "primary_color": "blue",
-        "secondary_color": "yellow"
-      },
-      {
-        "id": 2,
-        "title": "Natours",
-        "description": "Travel across the globe, touring the most beautiful places that nature has to offer.",
-        "link": "https,://essodillon.github.io/Natours/",
+        "link": "http://www.cedarlakehistory.org/#/map",
         "size": "small",
         "primary_color": "yellow",
         "secondary_color": "blue"
       },
       {
-        "id": 3,
-        "title": "Total Titans",
-        "description": "A workout application for gym rats of all shapes, sizes, and levels of experience! View previously made workouts, or create your own.",
-        "link": "https,://essodillon.github.io/Total_Titans/",
-        "size": "large",
+        "id": 2,
+        "title": "Natours",
+        "description": "Travel across the globe, touring the most beautiful places that nature has to offer.",
+        "link": "https://essodillon.github.io/Natours/",
+        "size": "small",
         "primary_color": "blue",
         "secondary_color": "yellow"
+      },
+      {
+        "id": 3,
+        "title": "Dinner Dart",
+        "description": "Write description here",
+        "link": "https://dinnerdart-8ad0b.web.app/login",
+        "size": "large",
+        "primary_color": "yellow",
+        "secondary_color": "blue"
       },
       {
         "id": 4,
@@ -43,8 +43,8 @@
         "description": "Want to get away with some friends or family on a holiday?",
         "link": "https://essodillon.github.io/Trillo/",
         "size": "large",
-        "primary_color": "yellow",
-        "secondary_color": "blue"
+        "primary_color": "blue",
+        "secondary_color": "yellow"
       },
       {
         "id": 5,
@@ -52,8 +52,8 @@
         "description": "React single page application with Firebase authentication and firestore data/file storage. Checkout upcoming boxing fights, and connect with world champions.",
         "link": "https://fightlife-3373d.web.app/",
         "size": "small",
-        "primary_color": "blue",
-        "secondary_color": "yellow"
+        "primary_color": "yellow",
+        "secondary_color": "blue"
       },
       {
         "id": 6,
@@ -61,8 +61,8 @@
         "description": "Fans of Stardew Valley, this ones for you! Checkout all the candidates in the game available for marriage, and learn more about them.",
         "link": "https://essodillon.github.io/SV_MarriageCards/",
         "size": "small",
-        "primary_color": "yellow",
-        "secondary_color": "blue"
+        "primary_color": "blue",
+        "secondary_color": "yellow"
       },
       {
         "id": 7,
@@ -70,8 +70,8 @@
         "description": "A fun little matching game with CSS animations, built with React JavaScript. Themed with some of my favorite programming languages!",
         "link": "https://essodillon.github.io/Developer-Match/",
         "size": "small",
-        "primary_color": "blue",
-        "secondary_color": "yellow"
+        "primary_color": "yellow",
+        "secondary_color": "blue"
       },
       {
         "id": 8,
@@ -79,8 +79,8 @@
         "description": "The final project for my Intermediate Web Dev summer course of 2019. For those with a strong desire or impulse to wander, or travel the world.",
         "link": "https://essodillon.github.io/Travel-Fly/index.html",
         "size": "large",
-        "primary_color": "yellow",
-        "secondary_color": "blue"
+        "primary_color": "blue",
+        "secondary_color": "yellow"
       },
       {
         "id": 9,
@@ -88,8 +88,8 @@
         "description": "Finance tracking application with user authentication and Firebase backend. Start tracking your purchases today! Definitely the most secure banking application ever.",
         "link": "https://mymoney-d5e4b.web.app",
         "size": "large",
-        "primary_color": "blue",
-        "secondary_color": "yellow"
+        "primary_color": "yellow",
+        "secondary_color": "blue"
       }
     ]
   }

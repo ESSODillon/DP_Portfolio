@@ -60,7 +60,7 @@
 
     // Toggled off when "View All" is clicked
     &__original {
-      height: 80vh;
+      height: max-content;
     }
 
     // Toggled on when "View All" is clicked
@@ -98,7 +98,7 @@
           margin: 2rem;
 
           &__small {
-            height: 25vh;
+            height: 100%;
             width: 25%;
 
             @include respond(tablet-portrait) {
@@ -108,10 +108,11 @@
           }
 
           &__large {
-            height: 30vh;
+            height: 100%;
             width: 40%;
 
             @include respond(tablet-portrait) {
+
               width: 80%;
               margin-bottom: 5rem;
             }

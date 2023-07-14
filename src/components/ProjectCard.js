@@ -1,6 +1,10 @@
 import React from 'react';
+
 import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
+import LanguageIcon from '@mui/icons-material/Language';
+import { Link } from '@mui/material';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function ProjectCard(project) {
   return (
@@ -12,10 +16,18 @@ function ProjectCard(project) {
         <Grid item xs={12}>
           <p className='box__text'>{project.description}</p>
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <a href={project.link} className={`btn btn--${project.secondary_color} btn--animated box__button`}>
             Visit Site
           </a>
+        </Grid> */}
+        <Grid item xs={12}>
+          <Link href={project.link}>
+            <LanguageIcon />
+          </Link>
+          <Link href={project.github}>
+            <GitHubIcon />
+          </Link>
         </Grid>
       </Grid>
     </Card>

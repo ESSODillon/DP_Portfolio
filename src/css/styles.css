@@ -27,7 +27,7 @@ body {
 
 ::selection {
   background-color: #f1c40f;
-  color: #000; }
+  color: #34495e; }
 
 @font-face {
   font-family: Mustardo;
@@ -263,7 +263,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to left bottom, rgba(52, 73, 94, 0.9), rgba(52, 73, 94, 0.9)), url(../assets/Indianapolis.jpeg);
+  background-image: linear-gradient(to left bottom, rgba(52, 73, 94, 0.9), rgba(52, 73, 94, 0.9)), url(../../src/assets/Indianapolis.jpeg);
   background-size: cover;
   background-position: top;
   position: relative; }
@@ -367,7 +367,7 @@ body {
   text-align: center;
   position: relative; }
   .section--projects__original {
-    height: 80vh; }
+    height: max-content; }
   .section--projects__more {
     height: max-content; }
   @media only screen and (max-width: 56.25em) {
@@ -390,14 +390,14 @@ body {
       padding-bottom: 1.5rem;
       margin: 2rem; }
       .section--projects .projects__container .box__small {
-        height: 25vh;
+        height: 100%;
         width: 25%; }
         @media only screen and (max-width: 56.25em) {
           .section--projects .projects__container .box__small {
             width: 80%;
             margin-bottom: 3rem; } }
       .section--projects .projects__container .box__large {
-        height: 30vh;
+        height: 100%;
         width: 40%; }
         @media only screen and (max-width: 56.25em) {
           .section--projects .projects__container .box__large {
