@@ -6,6 +6,8 @@
         "title": "Total Titans",
         "description": "A workout application for gym rats of all shapes, sizes, and levels of experience! View previously made workouts, or create your own.",
         "link": "https://essodillon.github.io/Total_Titans/",
+        "github": "https://github.com/ESSODillon/Total_Titans",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React", "Redux", "Firebase"],
         "size": "small",
         "primary_color": "blue",
         "secondary_color": "yellow"
@@ -13,8 +15,10 @@
       {
         "id": 1,
         "title": "CLHA Web App",
-        "description": "Write description here",
+        "description": "Client project for the Cedar Lake Historical Association. A web application for users to view historical sites in the Cedar Lake area. ",
         "link": "http://www.cedarlakehistory.org/#/map",
+        "github": "https://github.com/ESSODillon/CLHA-app",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React", "Ionic"],
         "size": "small",
         "primary_color": "yellow",
         "secondary_color": "blue"
@@ -24,6 +28,8 @@
         "title": "Natours",
         "description": "Travel across the globe, touring the most beautiful places that nature has to offer.",
         "link": "https://essodillon.github.io/Natours/",
+        "github": "https://github.com/ESSODillon/Natours",
+        "tech_stack": ["HTML", "CSS", "SCSS"],
         "size": "small",
         "primary_color": "blue",
         "secondary_color": "yellow"
@@ -31,8 +37,10 @@
       {
         "id": 3,
         "title": "Dinner Dart",
-        "description": "Write description here",
+        "description": "My Senior Capstone project. A Firebase web app that's basically a Door Dash clone. Features CRUD operations, user authentication, and a Firestore backend, as well as different user roles.",
         "link": "https://dinnerdart-8ad0b.web.app/login",
+        "github": "https://github.com/ESSODillon/DinnerDart",
+        "tech_stack": ["HTML", "CSS", "SCSS", "JavaScript", "React", "Redux", "Firebase"],
         "size": "large",
         "primary_color": "yellow",
         "secondary_color": "blue"
@@ -42,6 +50,8 @@
         "title": "Trillo",
         "description": "Want to get away with some friends or family on a holiday?",
         "link": "https://essodillon.github.io/Trillo/",
+        "github": "https://github.com/ESSODillon/Trillo",
+        "tech_stack": ["HTML", "CSS", "SCSS"],
         "size": "large",
         "primary_color": "blue",
         "secondary_color": "yellow"
@@ -51,6 +61,8 @@
         "title": "Fight Life",
         "description": "React single page application with Firebase authentication and firestore data/file storage. Checkout upcoming boxing fights, and connect with world champions.",
         "link": "https://fightlife-3373d.web.app/",
+        "github": "https://github.com/ESSODillon/Fight-Life",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React", "Redux", "Firebase"],
         "size": "small",
         "primary_color": "yellow",
         "secondary_color": "blue"
@@ -60,6 +72,8 @@
         "title": "SV Marriage Cards",
         "description": "Fans of Stardew Valley, this ones for you! Checkout all the candidates in the game available for marriage, and learn more about them.",
         "link": "https://essodillon.github.io/SV_MarriageCards/",
+        "github": "https://github.com/ESSODillon/SV_MarriageCards",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
         "size": "small",
         "primary_color": "blue",
         "secondary_color": "yellow"
@@ -69,6 +83,8 @@
         "title": "Developer Match",
         "description": "A fun little matching game with CSS animations, built with React JavaScript. Themed with some of my favorite programming languages!",
         "link": "https://essodillon.github.io/Developer-Match/",
+        "github": "https://github.com/ESSODillon/Developer-Match",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React"],
         "size": "small",
         "primary_color": "yellow",
         "secondary_color": "blue"
@@ -78,6 +94,8 @@
         "title": "Travel-Fly",
         "description": "The final project for my Intermediate Web Dev summer course of 2019. For those with a strong desire or impulse to wander, or travel the world.",
         "link": "https://essodillon.github.io/Travel-Fly/index.html",
+        "github": "https://github.com/ESSODillon/Travel-Fly",
+        "tech_stack": ["HTML", "CSS", "SCSS"],
         "size": "large",
         "primary_color": "blue",
         "secondary_color": "yellow"
@@ -87,6 +105,8 @@
         "title": "My Money",
         "description": "Finance tracking application with user authentication and Firebase backend. Start tracking your purchases today! Definitely the most secure banking application ever.",
         "link": "https://mymoney-d5e4b.web.app",
+        "github": "https://github.com/ESSODillon/myMoney",
+        "tech_stack": ["HTML", "CSS", "JavaScript", "React", "Redux", "Firebase"],
         "size": "large",
         "primary_color": "yellow",
         "secondary_color": "blue"

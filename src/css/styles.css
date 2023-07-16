@@ -261,6 +261,14 @@ body {
     fill: #fff;
     transform: translateY(-3px); }
 
+.icon__card {
+  width: 3rem;
+  height: 3rem;
+  fill: #34495e; }
+  .icon__card:hover, .icon__card:active {
+    cursor: pointer;
+    transform: translateY(-3px); }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to left bottom, rgba(52, 73, 94, 0.9), rgba(52, 73, 94, 0.9)), url(../../src/assets/Indianapolis.jpeg);
@@ -364,7 +372,6 @@ body {
       font-size: 1.5rem; }
 
 .section--projects {
-  text-align: center;
   position: relative; }
   .section--projects__original {
     height: max-content; }
@@ -386,8 +393,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
+      padding: 2rem;
       margin: 2rem; }
       .section--projects .projects__container .box__small {
         height: 100%;
@@ -403,10 +409,6 @@ body {
           .section--projects .projects__container .box__large {
             width: 80%;
             margin-bottom: 5rem; } }
-        @media only screen and (max-width: 37.5em) {
-          .section--projects .projects__container .box__large {
-            padding-left: 0;
-            padding-right: 0; } }
       .section--projects .projects__container .box__blue {
         background-color: #fff;
         border: 5px solid #3498db; }
@@ -414,13 +416,18 @@ body {
         background-color: #fff;
         border: 5px solid #f1c40f; }
       .section--projects .projects__container .box__text {
-        padding-left: 2rem;
-        padding-right: 2rem;
         font-size: 1.5rem; }
       .section--projects .projects__container .box__hidden {
         display: none; }
       .section--projects .projects__container .box__button {
         margin: 0 auto; }
+      .section--projects .projects__container .box__header {
+        display: flex;
+        justify-content: space-between; }
+      .section--projects .projects__container .box__tech {
+        display: flex; }
+        .section--projects .projects__container .box__tech--item {
+          margin-right: 1rem; }
   .section--projects .projects__button {
     position: absolute;
     top: 2rem;

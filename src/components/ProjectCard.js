@@ -1,9 +1,7 @@
 import React from 'react';
 
-import Card from '@mui/material/Card';
-import Grid from '@mui/material/Grid';
 import LanguageIcon from '@mui/icons-material/Language';
-import { Link } from '@mui/material';
+import { CardHeader, Link, Card, CardActions, Grid } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function ProjectCard(project) {
@@ -11,7 +9,17 @@ function ProjectCard(project) {
     <Card className={`box box__${project.primary_color} box__${project.size}`}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <h3 className='heading__small'>{project.title}</h3>
+          <div class='box__header'>
+            <h3 className='heading__small'>{project.title}</h3>
+            <div>
+              <Link href={project.link}>
+                <LanguageIcon class='icon__card' />
+              </Link>
+              <Link href={project.github}>
+                <GitHubIcon class='icon__card' />
+              </Link>
+            </div>
+          </div>
         </Grid>
         <Grid item xs={12}>
           <p className='box__text'>{project.description}</p>
@@ -22,12 +30,11 @@ function ProjectCard(project) {
           </a>
         </Grid> */}
         <Grid item xs={12}>
-          <Link href={project.link}>
-            <LanguageIcon />
-          </Link>
-          <Link href={project.github}>
-            <GitHubIcon />
-          </Link>
+          <div className='box__tech'>
+            {project.tech_stack.map((tech) => (
+              <p className='box__tech box__tech--item'>{tech}</p>
+            ))}
+          </div>
         </Grid>
       </Grid>
     </Card>

@@ -40,6 +40,8 @@ function ProjectsSection() {
                   title={project.title}
                   description={project.description}
                   link={project.link}
+                  github={project.github}
+                  tech_stack={project.tech_stack}
                   size={project.size}
                   primary_color={project.primary_color}
                   secondary_color={project.secondary_color}
@@ -51,6 +53,8 @@ function ProjectsSection() {
                 title={project.title}
                 description={project.description}
                 link={project.link}
+                github={project.github}
+                tech_stack={project.tech_stack}
                 size={project.size}
                 primary_color={project.primary_color}
                 secondary_color={project.secondary_color}
