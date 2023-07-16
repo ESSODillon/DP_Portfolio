@@ -13,6 +13,11 @@ html {
   // This defines what 1 rem is, in this case it's 62.5% of the original preset 16px. So the new base for rem is 10px.
   font-size: 62.5%;
 
+  @include respond(smaller_phone) {
+    // Width < 1200?
+    font-size: 40%; // 1 rem is now 6px
+  }
+
   @include respond(tablet-landscape) {
     // Width < 1200?
     font-size: 56.25%; // 1 rem is now 9px

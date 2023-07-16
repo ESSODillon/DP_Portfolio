@@ -20,6 +20,9 @@
       right: 0;
       width: 100%;
     }
+    @include respond(smaller_phone) {
+      margin-top: -20%;
+    }
   }
 
   &__speaker {

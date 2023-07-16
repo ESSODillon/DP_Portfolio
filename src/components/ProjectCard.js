@@ -1,8 +1,7 @@
 import React from 'react';
-
-import LanguageIcon from '@mui/icons-material/Language';
 import { CardHeader, Link, Card, CardActions, Grid } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 function ProjectCard(project) {
   return (
@@ -13,7 +12,7 @@ function ProjectCard(project) {
             <h3 className='heading__small'>{project.title}</h3>
             <div>
               <Link href={project.link}>
-                <LanguageIcon class='icon__card' />
+                <ExitToAppIcon class='icon__card' />
               </Link>
               <Link href={project.github}>
                 <GitHubIcon class='icon__card' />
