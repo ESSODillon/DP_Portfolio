@@ -34,7 +34,7 @@ function Contact() {
 
         <h3 class='heading-contact heading-contact__sub u-center-text'>How may I be of assistance?</h3>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} class='contact__form'>
           <input type='hidden' name='_next' value='https://essodillon.github.io/DP_Portfolio/thanks' />
 
           <div class='contact__name'>
@@ -61,7 +61,7 @@ function Contact() {
             <textarea class='contact__input contact__input__second' type='text' id='message' name='message' required></textarea>
           </div>
 
-          <a class='btn btn--yellow btn--animated contact__button u-center-text'>Submit</a>
+          <input class='btn btn--yellow btn--animated contact__button u-center-text' type='submit' value='Submit' />
         </form>
       </section>
     </React.Fragment>
