@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardHeader, Link, Card, CardActions, Grid } from '@mui/material';
+import { Link, Card, Grid } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
