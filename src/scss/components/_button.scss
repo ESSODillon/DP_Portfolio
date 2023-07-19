@@ -16,7 +16,6 @@
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem $object-shadow-2;
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -35,17 +34,12 @@
     color: $color-grey-dark-3;
     font-weight: bold;
 
+    &:hover {
+     box-shadow: 1rem 1rem $color-secondary;
+    }
+
     &::after {
       background-color: $color-primary;
-    }
-  }
-
-  &--blue {
-    background-color: $color-secondary;
-    color: $color-white;
-
-    &::after {
-      background-color: $color-secondary;
     }
   }
 
@@ -53,21 +47,12 @@
     background-color: $color-tertiary;
     color: $color-primary;
 
+    &:hover {
+      box-shadow: 1rem 1rem $color-secondary;
+     }
+
     &::after {
       background-color: $color-tertiary;
     }
-  }
-
-  &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
   }
 }

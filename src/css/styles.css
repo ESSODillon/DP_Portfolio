@@ -195,8 +195,7 @@ body {
   font-size: 1.6rem; }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  transform: translateY(-3px); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -209,32 +208,18 @@ body {
   background-color: #f1c40f;
   color: #333;
   font-weight: bold; }
+  .btn--yellow:hover {
+    box-shadow: 1rem 1rem #3498db; }
   .btn--yellow::after {
     background-color: #f1c40f; }
-
-.btn--blue {
-  background-color: #3498db;
-  color: #fff; }
-  .btn--blue::after {
-    background-color: #3498db; }
 
 .btn--dark {
   background-color: #34495e;
   color: #f1c40f; }
+  .btn--dark:hover {
+    box-shadow: 1rem 1rem #3498db; }
   .btn--dark::after {
     background-color: #34495e; }
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s; }
 
 .icon__light {
   width: 5rem;
