@@ -4,15 +4,14 @@
   "description": "Dillon Polleys Web Portfolio",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass scss/styles.scss css/styles.css -w",
-    "dev:server": "live-server"
+    "watch": "sass scss/styles.scss css/styles.css -w",
+    "start": "live-server"
   },
   "author": "Dillon Polley",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1"
-  },
   "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.85.0",
     "sweetalert2": "^11.3.6"
   }
 }

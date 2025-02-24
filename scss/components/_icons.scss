@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .icon {
   &__light {
     width: 5rem;

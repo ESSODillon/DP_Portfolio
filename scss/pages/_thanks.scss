@@ -1,3 +1,6 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .thanks {
   background-color: $color-tertiary;
   height: 100vh;
