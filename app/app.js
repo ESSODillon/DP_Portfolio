@@ -52,4 +52,20 @@ function initListeners() {
 
 $(document).ready(function () {
   initListeners();
+
+  let typed = new Typed("#typed", {
+    strings: [
+      "Full Stack Web Developer",
+      "Software Engineer",
+      "Master of Divs",
+      "Your Next Hire?",
+      "Code Wizard",
+      "Bug Exterminator",
+      "Cat Owner",
+      "Lets Go Blues!",
+    ],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+  });
 });
