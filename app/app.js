@@ -61,7 +61,7 @@ $(document).ready(function () {
       "Your Next Hire?",
       "Code Wizard",
       "Bug Exterminator",
-      "Cat Owner",
+      "Cat Guy",
       "Lets Go Blues!",
     ],
     typeSpeed: 50,
