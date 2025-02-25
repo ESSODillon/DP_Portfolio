@@ -36,6 +36,10 @@
     }
   }
 
+  &__typed {
+    color: $color-white;
+  }
+
   &__buttons {
     display: flex;
     flex-wrap: wrap;

@@ -41,6 +41,10 @@ body {
   color: #e0fbfc;
 }
 
+.typed-cursor {
+  color: #fff;
+}
+
 @font-face {
   font-family: Mustardo;
   src: url(../css/fonts/mustardo.ttf);
@@ -352,6 +356,9 @@ body {
   .header__speaker {
     display: none;
   }
+}
+.header__typed {
+  color: #fff;
 }
 .header__buttons {
   display: flex;
