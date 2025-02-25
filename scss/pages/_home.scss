@@ -61,11 +61,6 @@
     text-align: center;
     position: relative;
 
-    // Toggled off when "View All" is clicked
-    &__original {
-      height: 80vh;
-    }
-
     // Toggled on when "View All" is clicked
     &__more {
       height: max-content;
@@ -81,7 +76,8 @@
         justify-content: space-around;
         flex-wrap: wrap;
         align-content: space-around;
-
+        align-items: center;
+        height: fit-content;
         // Toggled off when "View All" is clicked
         &--original {
           height: 80%;
@@ -101,7 +97,7 @@
           margin: 2rem;
 
           &__small {
-            height: 25vh;
+            height: fit-content;
             width: 25%;
 
             @include respond(tablet-portrait) {
@@ -111,7 +107,7 @@
           }
 
           &__large {
-            height: 30vh;
+            height: fit-content;
             width: 40%;
 
             @include respond(tablet-portrait) {
@@ -161,6 +157,17 @@
           width: 50%;
           top: 0;
           right: 0;
+        }
+      }
+
+      &__header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &--icon {
+          margin-left: 2rem;
+          margin-top: 1rem;
         }
       }
     }
