@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.navigation {
+  color: $color-white;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  right: 0;
+  margin-top: -10rem;
+}

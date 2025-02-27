@@ -1,3 +1,5 @@
+import { changeColor } from "./color_changing.js";
+
 function initListeners() {
   $("#view--all").click(function (e) {
     // Projects section
@@ -48,6 +50,30 @@ function initListeners() {
       "btn btn--yellow btn--animated projects__button"
     );
   });
+
+  $("#sports_team_color_cycle").click(function () {
+    let teams = ["Original", "Cubs", "Bengals", "Blues", "Pacers"];
+
+    let currentSrc = $(".header__speaker").attr("src");
+
+    for (let i = 0; i < teams.length; i++) {
+      if (currentSrc.includes(teams[i])) {
+        let nextIndex = (i + 1) % teams.length;
+        let selectedTeam = teams[nextIndex];
+
+        changeColor(selectedTeam);
+
+        $(".header__speaker").attr(
+          "src",
+          `img/Speaker_Picture_${selectedTeam}.png`
+        );
+
+        return;
+      }
+    }
+
+    $(".header__speaker").attr("src", `img/Speaker_Picture_${teams[0]}.png`);
+  });
 }
 
 $(document).ready(function () {
@@ -63,6 +89,8 @@ $(document).ready(function () {
       "Bug Exterminator",
       "Cat Guy",
       "Lets Go Blues!",
+      "Go Cubs Go!",
+      "Whodey Nation!",
     ],
     typeSpeed: 50,
     backSpeed: 50,

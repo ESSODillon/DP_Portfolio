@@ -37,8 +37,8 @@ body {
 }
 
 ::selection {
-  background-color: #ee6c4d;
-  color: #e0fbfc;
+  background-color: #f1c40f;
+  color: #34495e;
 }
 
 .typed-cursor {
@@ -405,6 +405,20 @@ body {
 .footer .icons__row img {
   width: 5rem;
   height: 5rem;
+}
+
+.navigation {
+  color: #fff;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  right: 0;
+  margin-top: -10rem;
 }
 
 .section--about {
