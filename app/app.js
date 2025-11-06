@@ -48,6 +48,21 @@ function initListeners() {
       "btn btn--yellow btn--animated projects__button"
     );
   });
+
+  // Experience tabs
+  $(".experience__tab").click(function () {
+    const targetTab = $(this).data("tab");
+
+    // Remove active class from all tabs and jobs
+    $(".experience__tab").removeClass("experience__tab--active");
+    $(".experience__job").removeClass("experience__job--active");
+
+    // Add active class to clicked tab and corresponding job
+    $(this).addClass("experience__tab--active");
+    $(`.experience__job[data-content="${targetTab}"]`).addClass(
+      "experience__job--active"
+    );
+  });
 }
 
 $(document).ready(function () {

@@ -1,0 +1,154 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.section--experience {
+  background-color: $color-tertiary;
+  padding: 5rem 0;
+  min-height: 70vh;
+
+  .experience {
+    &__container {
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      gap: 3rem;
+
+      @include respond(tablet-portrait) {
+        flex-direction: column;
+      }
+    }
+
+    &__tabs {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      min-width: 25rem;
+
+      @include respond(tablet-portrait) {
+        flex-direction: row;
+        overflow-x: auto;
+        min-width: 100%;
+        gap: 1rem;
+      }
+    }
+
+    &__tab {
+      background: transparent;
+      border: none;
+      border-left: 3px solid rgba($color-white, 0.2);
+      color: rgba($color-white, 0.7);
+      padding: 1.5rem 2rem;
+      text-align: left;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: inherit;
+
+      @include respond(tablet-portrait) {
+        border-left: none;
+        border-bottom: 3px solid rgba($color-white, 0.2);
+        white-space: nowrap;
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: rgba($color-white, 0.05);
+        color: $color-primary;
+      }
+
+      &--active {
+        border-left-color: $color-primary;
+        color: $color-primary;
+        background-color: rgba($color-white, 0.05);
+
+        @include respond(tablet-portrait) {
+          border-left: none;
+          border-bottom-color: $color-primary;
+        }
+      }
+    }
+
+    &__content {
+      flex: 1;
+      position: relative;
+      min-height: 50rem;
+
+      @include respond(tablet-portrait) {
+        min-height: 40rem;
+      }
+    }
+
+    &__job {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+      background-color: rgba($color-white, 0.05);
+      padding: 3rem;
+      border-radius: 5px;
+
+      @include respond(phone) {
+        padding: 2rem;
+      }
+
+      &--active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &__title {
+      font-size: 2.8rem;
+      color: $color-white;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    &__company {
+      font-size: 2rem;
+      color: $color-primary;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    &__duration {
+      font-size: 1.5rem;
+      color: rgba($color-white, 0.8);
+      margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+
+    &__location {
+      font-size: 1.4rem;
+      color: rgba($color-white, 0.6);
+      margin-bottom: 2rem;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 1.6rem;
+        color: rgba($color-white, 0.9);
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+        padding-left: 2.5rem;
+        position: relative;
+
+        &::before {
+          content: "▹";
+          position: absolute;
+          left: 0;
+          color: $color-primary;
+          font-size: 2rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}

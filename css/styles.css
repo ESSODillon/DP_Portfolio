@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -570,6 +571,147 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.section--experience {
+  background-color: #34495e;
+  padding: 5rem 0;
+  min-height: 70vh;
+}
+.section--experience .experience__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section--experience .experience__container {
+    flex-direction: column;
+  }
+}
+.section--experience .experience__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 25rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section--experience .experience__tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    min-width: 100%;
+    gap: 1rem;
+  }
+}
+.section--experience .experience__tab {
+  background: transparent;
+  border: none;
+  border-left: 3px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem 2rem;
+  text-align: left;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+@media only screen and (max-width: 56.25em) {
+  .section--experience .experience__tab {
+    border-left: none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+    text-align: center;
+  }
+}
+.section--experience .experience__tab:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f1c40f;
+}
+.section--experience .experience__tab--active {
+  border-left-color: #f1c40f;
+  color: #f1c40f;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+@media only screen and (max-width: 56.25em) {
+  .section--experience .experience__tab--active {
+    border-left: none;
+    border-bottom-color: #f1c40f;
+  }
+}
+.section--experience .experience__content {
+  flex: 1;
+  position: relative;
+  min-height: 50rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .section--experience .experience__content {
+    min-height: 40rem;
+  }
+}
+.section--experience .experience__job {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 37.5em) {
+  .section--experience .experience__job {
+    padding: 2rem;
+  }
+}
+.section--experience .experience__job--active {
+  opacity: 1;
+  visibility: visible;
+}
+.section--experience .experience__title {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.section--experience .experience__company {
+  font-size: 2rem;
+  color: #f1c40f;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.section--experience .experience__duration {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+.section--experience .experience__location {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 2rem;
+}
+.section--experience .experience__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section--experience .experience__list li {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  padding-left: 2.5rem;
+  position: relative;
+}
+.section--experience .experience__list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #f1c40f;
+  font-size: 2rem;
+  line-height: 1.6;
 }
 
 .contact {
